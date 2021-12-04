@@ -1,6 +1,5 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const { prompt } = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown')
 
 const questions = [
@@ -116,9 +115,11 @@ const questions = [
     }
 ];
 
-const promptUser = () => {
-    return inquirer.prompt([questions])
-    .then.push(readmeData);
+const promptUser = readmeData => {
+    return inquirer.prompt(questions)
+    .then(responses => {
+        return writeFile(generateMarkdown(responses));
+      });
 }
 
 
@@ -127,7 +128,7 @@ const promptUser = () => {
 
 const writeFile = fileContent => {
     return new Promise((resolve, reject) => {
-        fs.writeFile('./README.md', fileContent, err => {
+        fs.writeFile('../README.md', fileContent, err => {
             if (err) {
                 reject(err);
                 return;
@@ -150,4 +151,4 @@ const init = () => {
 }
 
 // // Function call to initialize app
-// init();
+init();
