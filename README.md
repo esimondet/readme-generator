@@ -4,7 +4,7 @@
 
   ## Description
 
-  <p>This tool creates a professional readme.md file through user prompts</p>
+  <p>This tool creates a professional README through user prompts</p>
 
   ## Table of Contents 
   * [Installation](#installation)
@@ -16,25 +16,20 @@
 
   ## Installation
 
-  <p>Clone the repository and run node index.js from the develop file</p>
+  <p>Node and the Inquirer.js package are required to run this tool. 
+  </br>
+  Clone the repository and run <code> node index.js </code> on git bash from the develop file. Watch the video walkthrough for additional instruction.</p> 
+
+  [Video Walkthrough](https://www.youtube.com/watch?v=WwVb7ODk6s4)  
 
   ## Usage
 
-  <p>Use this to make a professional readme</p>
-  
-  
-
-  ## Contributing
-
-  <p>COntribute nicely</p>
-
-  ## Tests
-
-  <code>none</code>
+  <p>This tool can be used to quickly and easily create a README.md file, add this file to any project!</p>
+   
 
   ## Questions 
 
-  Please direct questions to esimondet at [https://github.com/esimondet](https://github.com/esimondet)
+  Please direct questions to my github at [esimondet](https://github.com/esimondet)
   or email [edison.simondet@gmail.com](edison.simondet@gmail.com).
 
-  ###### Made using Readme Generator!
+  ###### Made using [Readme Generator](https://github.com/esimondet/readme-generator)!
