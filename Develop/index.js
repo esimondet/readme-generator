@@ -127,7 +127,7 @@ const promptUser = readmeData => {
 
 const writeFile = fileContent => {
     return new Promise((resolve, reject) => {
-        fs.writeFile('../README.md', fileContent, err => {
+        fs.writeFile('./README.md', fileContent, err => {
             if (err) {
                 reject(err);
                 return;

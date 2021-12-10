@@ -42,7 +42,7 @@ function renderLicenseBadge(data) {
 
   if (data.license != 'None') {
     return `
-    [![License](${data.licenseImg})](${data.licenseLink})
+  [![License](${data.licenseImg})](${data.licenseLink})
     `
   } else {
 
@@ -54,7 +54,7 @@ function renderLicenseTableOfContents(data) {
 
   if (data.license != 'None') {
     return `
-    * [License](#license)
+  * [License](#license)
     `
   } else {
 
@@ -108,7 +108,7 @@ function generateMarkdown(data) {
   Please direct questions to ${data.github} at [https://github.com/${data.github}](https://github.com/${data.github})
   or email [${data.email}](${data.email}).
 
-  ###### Made using Readme Generator!
+  ###### [Made using Readme Generator!](https://github.com/esimondet/readme-generator)
 `;
 }
 
