@@ -123,8 +123,7 @@ const promptUser = readmeData => {
 }
 
 
-// TODO: Create a function to write README file
-// function writeToFile(fileName, data) { }
+// function to write README file
 
 const writeFile = fileContent => {
     return new Promise((resolve, reject) => {
@@ -143,12 +142,9 @@ const writeFile = fileContent => {
 }
 
 
-// // TODO: Create a function to initialize app
-// function init() { }
-
+// function to initialize app
 const init = () => {
     promptUser();
 }
 
-// // Function call to initialize app
 init();
